@@ -1,0 +1,694 @@
+$gold: #D5966C;
+$black: #151515;
+$grey: #444444;
+
+$big_shoulders: "Big Shoulders", sans-serif;
+$outfit: "Outfit", sans-serif;
+
+$tablet: 768px;
+$tablet_horizontal: 1024px;
+$desktop: 1200px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  .img_header {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.bg_header_desktop {
+  display: none;
+}
+
+.button_location:hover {
+  a:first-child {
+    background-color: $gold;
+  }
+
+  a:last-child {
+    background-color: $black;
+  }
+}
+
+.button_home:hover {
+  a:first-child {
+    background-color: $black;
+  }
+
+  a:last-child {
+    background-color: $gold;
+  }
+}
+
+.container_principal {
+  padding: 0 16px;
+}
+
+.header_home {
+  margin-bottom: 120px;
+
+  .desc_desktop {
+    p {
+      margin-bottom: 48px;
+    }
+  }
+
+  h1 {
+    font-family: $big_shoulders;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 55px;
+    color: $black;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-family: $outfit;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: $grey;
+    margin-bottom: 32px;
+  }
+
+  .button_location {
+    width: fit-content;
+    display: flex;
+    margin-left: 0;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:first-child {
+      font-family: $big_shoulders;
+      background-color: $black;
+      color: white;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 3.64px;
+      padding: 26px 24px;
+    }
+
+    &:last-child {
+      background-color: $gold;
+      padding: 24px 20px;
+    }
+  }
+}
+
+.main_home {
+  margin-bottom: 120px;
+
+  .container_gallery {
+    .img_turistas_tablet {
+      display: none;
+    }
+
+    h2 {
+      font-family: $big_shoulders;
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 60px;
+      color: $black;
+      margin-bottom: 21px;
+    }
+
+    p {
+      font-family: $outfit;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      color: $grey;
+      margin-bottom: 32px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .img_turistas_tablet {
+    margin-bottom: 16px;
+  }
+
+  .img_turistas {
+    img {
+      margin-bottom: 16px;
+      height: 100%;
+    }
+  }
+
+  .piso_marron {
+    margin-bottom: 25px;
+
+    img:last-child {
+      display: none;
+    }
+  }
+
+  .img_mesa,
+  .img_turistas {
+    margin-bottom: 16px;
+
+    img:last-child {
+      display: none;
+    }
+  }
+}
+
+.container_inspired {
+  background-color: $black;
+  padding: 48px 24px;
+
+  h2 {
+    font-family: $big_shoulders;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 45px;
+    color: white;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-family: $outfit;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+  }
+}
+
+.container_footer {
+  background-color: $black;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+
+  p {
+    font-family: $outfit;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  .rrss_blanco {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.header_location {
+  position: relative;
+
+  .button_home {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:first-child {
+      background-color: $gold;
+      padding: 24px 20px;
+    }
+
+    &:last-child {
+      font-family: $big_shoulders;
+      background-color: $black;
+      color: white;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 3.64px;
+      padding: 26px 24px;
+    }
+  }
+}
+
+.container_location {
+  margin: 0;
+  padding: 0;
+}
+
+.main_location {
+  .img_map_desktop {
+    display: none;
+  }
+
+  .container_img_map {
+    position: relative;
+    height: 607.19px;
+
+    .img_map {
+      width: 100%;
+    }
+
+    .figure_pin {
+      position: absolute;
+      top: 43%;
+      left: 42%;
+    }
+  }
+
+  .container_negro {
+    padding: 0 16px;
+    background-color: $black;
+
+    h1 {
+      font-family: $big_shoulders;
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 45px;
+      color: white;
+      margin-bottom: 48px;
+      padding-top: 48px;
+    }
+
+    h2 {
+      font-family: $big_shoulders;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 32px;
+      color: $gold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $outfit;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      color: white;
+
+      &:nth-of-type(1) {
+        margin-bottom: 20px;
+      }
+
+      &:last-child {
+        padding-bottom: 56px;
+      }
+    }
+  }
+}
+
+.footer_location {
+  .container_footer_location {
+    background-color: $gold;
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    p {
+      font-family: $outfit;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+      color: $black;
+    }
+
+    .rrss_negro {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  body {
+    background-image: url(../dist/img/cuadro_abuela_tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: 437px;
+  }
+
+  .img_header {
+    display: none;
+  }
+
+  .container_principal {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    .piso_marron,
+    .img_mesa {
+      img:nth-of-type(1) {
+        display: none;
+      }
+
+      img:last-child {
+        display: block;
+      }
+
+      margin: 0;
+      padding: 0;
+    }
+
+    .header_home {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      height: 400px;
+      width: 340px;
+      margin-top: 145px;
+      margin-left: 350px;
+      margin-bottom: 300px;
+
+      * {
+        margin: 0;
+      }
+    }
+
+    .main_home {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-auto-rows: 1fr;
+      gap: 10px;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+
+      img {
+        height: 100%;
+      }
+
+      .img_turistas,
+      .img_turistas_movil {
+        display: none;
+      }
+
+      .container_gallery {
+        grid-column: 1;
+        grid-row: 1;
+        order: -1;
+        padding: 36px 50px 65px 0;
+
+        h2 {
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 45px;
+          margin-bottom: 24px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 17px;
+          line-height: 28px;
+          font-weight: 300;
+        }
+      }
+
+      .piso_marron {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .img_mesa {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .img_turistas_tablet {
+        display: flex;
+        grid-column: 3;
+        grid-row: 2;
+        height: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .container_inspired {
+        grid-column: 3;
+        grid-row: 3;
+        height: auto;
+        align-self: stretch;
+        padding-top: 40%;
+      }
+    }
+
+    .container_footer {
+      display: flex;
+      align-items: flex-start;
+      gap: 100px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .main_location {
+    .container_img_map {
+      height: auto;
+
+      .figure_pin {
+        top: 50%;
+        left: 46%;
+      }
+    }
+
+    .container_negro {
+      padding: 48px;
+
+      h1 {
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .footer_location .container_footer_location,
+  .container_footer {
+    flex-direction: row;
+  }
+
+  .button_home {
+    margin: 0 40px;
+  }
+
+  .container_footer_location {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    background-image: none;
+  }
+
+  .img_header {
+    display: none;
+  }
+
+  .container_img_map {
+    min-height: 500px;
+  }
+
+  .main_location {
+    .img_map_desktop {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .container_img_map {
+      .figure_pin {
+        top: 40%;
+        left: 47%;
+      }
+    }
+
+    .container_negro {
+      padding: 104px 165px 128px;
+      display: flex;
+
+      .container_negro_title {
+        width: 50%;
+
+        h1 {
+          padding-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .container_negro_description {
+        width: 50%;
+
+        p {
+          margin-bottom: 0;
+          padding: 0;
+        }
+
+        p:nth-of-type(1) {
+          margin-bottom: 32px;
+        }
+
+        p:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .footer_location .container_footer_location {
+    padding: 80px 165px;
+    flex-direction: row;
+    gap: 140px;
+    align-items: flex-start;
+
+    p {
+      font-size: 16px;
+    }
+
+    .rrss_negro {
+      gap: 20px;
+    }
+  }
+
+  .container_footer {
+    padding: 80px 165px;
+    gap: 115px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .container_principal {
+    .main_home {
+      padding: 0 149px 180px;
+      gap: 30px;
+
+      .container_gallery {
+        padding-top: 100px;
+        padding-right: 50px;
+        text-align: left;
+
+        h2 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .header_home {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      margin: 190px 149px 400px;
+    }
+
+    .title_desktop {
+      h1 {
+        color: white;
+        width: 510px;
+        font-size: 96px;
+        line-height: 88px;
+        font-weight: 900;
+      }
+    }
+
+    .desc_desktop {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      max-width: 300px;
+
+      p {
+        font-family: $outfit;
+        font-size: 18px;
+        line-height: 32px;
+      }
+
+      .button_location {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .bg_header_desktop {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 700px;
+    z-index: -1;
+
+    .img_bg_header_desktop {
+      width: 400px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .cuadro_negro {
+      width: 400px;
+      background-color: $black;
+    }
+  }
+
+  .img_bg_header_desktop,
+  .cuadro_negro {
+    z-index: -1;
+  }
+}
